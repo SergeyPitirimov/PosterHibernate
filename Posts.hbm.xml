@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="Poster.Posts" catalog="postgres" schema="public" table="Posts">
+    <id name="key" type="java.lang.Integer" column="key">
+      <generator class="identity"/>
+    </id>
+    <property name="userId" type="java.lang.Integer" column="userId"/>
+    <property name="postId" type="java.lang.Integer" column="postId"/>
+    <property name="post" type="string" column="post"/>
+  </class>
+</hibernate-mapping>
